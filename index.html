@@ -8,6 +8,7 @@
 
 <script>
   var socket = io();
+  socket.on('message', function (data) { document.write(data.name) });
 </script>
 
 <body>Hello world</body>
